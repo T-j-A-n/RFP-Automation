@@ -1,0 +1,80 @@
+# =====================================
+# EY Techathon Project Git Ignore File
+# =====================================
+
+# --- Python cache and virtual env ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+*.log
+
+# --- Jupyter & temp ---
+*.ipynb_checkpoints
+*.tmp
+*.temp
+*.bak
+
+# --- IDE and system files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Data directories (outputs, scraped files) ---
+data/
+!data/.gitkeep          # keep folder structure but ignore contents
+
+# --- Common output formats ---
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+*.html
+*.zip
+*.gz
+*.tar
+*.pkl
+*.db
+*.sqlite
+*.log
+
+# --- PDF / Docs / OCR outputs ---
+*.pdf
+*.doc
+*.docx
+*.rtf
+*.png
+*.jpg
+*.jpeg
+
+# --- Playwright & browser data ---
+playwright-report/
+test-results/
+trace.zip
+
+# --- VSCode Python environment ---
+.python-version
+
+# --- If using virtualenvwrapper ---
+*.env
+.env/
+
+# --- Ignore large model/data files ---
+*.pt
+*.pth
+*.h5
+*.model
+*.sav
+
+# --- Allow only source files, configs, and docs ---
+!*.py
+!requirements.txt
+!README.md
+!.gitignore
